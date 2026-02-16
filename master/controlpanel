@@ -143,6 +143,8 @@ cat /etc/containerd/config.toml | grep -i SystemdCgroup
 
 sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
 
+sudo sed -i 's/SystemdCgroup *= *false/SystemdCgroup = true/g' /etc/containerd/config.toml
+
 sudo sed -i "/\[plugins\.'io\.containerd\.grpc\.v1\.cri'\]/a\    sandbox_image = 'registry.k8s.io/pause:3.10'" /etc/containerd/config.toml
 ```
 
