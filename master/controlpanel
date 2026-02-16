@@ -249,7 +249,7 @@ crictl info
 
 ## calico setup  --> ip range is 192.168.0.0/16
 ```bash
-sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address=172.31.43.1 --cri-socket unix:///var/run/containerd/containerd.sock --node-name controlplane
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16(host ip range) --apiserver-advertise-address=172.31.43.1 --cri-socket unix:///var/run/containerd/containerd.sock --node-name controlplane
 ```
 ## flannel setup or weavenet setup --> ip range is 10.244.0.0/16
 ```bash
