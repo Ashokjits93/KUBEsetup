@@ -283,7 +283,10 @@ kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.31.3
 
 curl -O https://raw.githubusercontent.com/projectcalico/calico/v3.31.3/manifests/custom-resources-bpf.yaml
 
+vi custom-resources-bpf.yaml(update host ip range in the yaml file)
+
 kubectl apply -f custom-resources-bpf.yaml
+
 
 watch kubectl get tigerastatus
 ```
