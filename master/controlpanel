@@ -1,18 +1,6 @@
 # Multi-Node Kubernetes Cluster with Kubeadm 1.34 (containerd)
-
-## For more projects, check out  
-[https://harishnshetty.github.io/projects.html](https://harishnshetty.github.io/projects.html)
-
-[![Video Tutorial](https://github.com/harishnshetty/image-data-project/blob/22ed0e06accf2365a14a6e0a704044c93e16461c/kubeadm0.jpg)](https://youtu.be/u4zcPLI-tMs)
-
-[![Channel Link](https://github.com/harishnshetty/image-data-project/blob/22ed0e06accf2365a14a6e0a704044c93e16461c/kubeadm2.jpg)](https://youtu.be/u4zcPLI-tMs)
-
-
-
 sudo hostnamectl set-hostname master
 exec bash
-
-
 
 https://kubernetes.io/docs/reference/networking/ports-and-protocols/
 
@@ -28,7 +16,6 @@ https://kubernetes.io/docs/reference/networking/ports-and-protocols/
 [![Control Plane Security Group](https://github.com/harishnshetty/image-data-project/blob/22ed0e06accf2365a14a6e0a704044c93e16461c/kubeadm3-control-sg.png)](https://youtu.be/u4zcPLI-tMs)
 
 
-
 ## 🖥️ Kubernetes Worker Nodes – Network Ports
 
 | Protocol | Direction | Port / Range    | Purpose           | Used By              |
@@ -39,11 +26,6 @@ https://kubernetes.io/docs/reference/networking/ports-and-protocols/
 | UDP      | Inbound   | **30000–32767** | NodePort Services | All                  |
 
 [![Worker Node Security Group](https://github.com/harishnshetty/image-data-project/blob/22ed0e06accf2365a14a6e0a704044c93e16461c/kubeadm4-worker-sg.png)](https://youtu.be/u4zcPLI-tMs)
-
-
-
-### Run the below steps on the Master VM
-1) SSH into the Master EC2 server
 
 ### System Update & Base Packages
 
